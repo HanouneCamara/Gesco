@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    position: fixed;
+    width: 115px;
+    height: auto;
+    z-index: 2;
+}
+.burger
+{
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px 15px;
+}
+
+.burger div
+{
+    margin: 4px 0 3px;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+.Menu {
+    
+    background-color: #0b0f0c;
+    border: 1px solid #0b0f0c;
+}
+.items{
+    margin-top: 20%;
+    height: 11.2vh;
+    width: 100%;
+    border-bottom: 1px solid #12ca7e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.items  i:hover {
+    color: #12ca7e;
+}
+
+.items:nth-child(1){
+    height: 100px;
+}
+.icone{
+    width: 30px;
+}
+.text-menu{
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.text-menu:hover{
+    color: #12ca7e;
+}
+.title{
+    width: 100%;
+    text-align: right;
+}
+.title h2{
+    padding: 15px;
+    font-family: 'Updock', ;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 2px 3px #12ca7e;
+    font-style: italic;
+}
+.items:hover ul{
+    display: block;
+}
+@media only screen and (max-width: 500px) {
+    body 
+    {
+        overflow-x: hidden;
+    }
+    .Menu {
+        display: none;
+    }
+    .burger
+    {
+        display: block;
+        margin-right: 4%;
+    }
+    .items {
+        height: 9vh;
+    }
+}
+.nav-active
+{
+    display: block;
+}
+
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body{
+	background-color: #7c7b79;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+form{
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+}
+form h1{
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+    color: #12ca7e;
+    font-family: dayrom, serif;
+}
+.separation{
+	width: 100%;
+	height: 1px;
+	background-color: #12ca7e;
+}
+
+.corps-formulaire {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.input-group{
+	position: relative;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.gauche input{
+	margin-top: 5px;
+	padding: 10px 5px 10px 30px;
+	border: 1px solid #c9c9c9;
+	outline-color: #12ca7e;
+	border-radius: 5px;
+}
+.droite{
+	margin-left: 40px;
+}
+.droite select, input{
+	margin-left: 40px;
+    margin-top: 5px;
+	padding: 10px 5px 10px 30px;
+	border: 1px solid #c9c9c9;
+	outline-color: #12ca7e;
+	border-radius: 5px;
+}
+.pied-formulaire{
+    display: flex;
+    justify-content: space-between;
+}
+.pied-formulaire button{
+	margin-top: 10px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #12ca7e;
+	color: white;
+	font-size: 20px;
+	border: none;
+	padding: 10px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+    text-align: center;
+}
+
+.error-msg{
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+}
+.success-msg{
+	margin:10px 0;
+	display: block;
+	background: #12ca7e;
+	color:#fff;
+	border-radius: 5px;
+	font-size: 20px;
+	padding:10px;
+}
+@media only screen and (max-width: 600px) {
+
+	.droite{
+		margin-left: 0px;
+	}
+	.droite select, input{
+		margin-left: 0px;
+	}
+    .container .login-social {
+        display: block;
+    }
+    .container .login-social a {
+        display: block;
+    }
+	.pied-formulaire button{
+		left: 50%;
+	}
+}
+.login-register-text {
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: #12ca7e;
+}

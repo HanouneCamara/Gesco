@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body{
+	background-color: #7c7b79;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+}
+form{
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+}
+form h1{
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.separation{
+	width: 100%;
+	height: 1px;
+	background-color: #12ca7e;
+}
+.corps-formulaire{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.groupe{
+	position: relative;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+input{
+	margin-top: 5px;
+	padding: 7px 3px 5px;
+	border: 1px solid #c9c9c9;
+	outline-color: #12ca7e;
+	border-radius: 5px;
+}
+label {
+    color: #c9c9c9;
+}
+
+
+textarea{
+	margin-top: 5px;
+	padding: 10px;
+	background-color: #f8f8f8;
+	border: 2px solid #12ca7e;
+	outline: none;
+	border-radius: 5px;
+	resize: none;
+	height: 72%;
+}
+.error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+}
+.pied-formulaire{
+    display: flex;
+    justify-content: space-between;
+}
+.pied-formulaire input{
+	margin-top: 10px;
+    margin-right: 205px;
+	background-color: #12ca7e;
+	color: white;
+	font-size: 15px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.pied-formulaire input:hover{
+	transform: scale(1.05);
+}
+.pied-formulaire a{
+    text-decoration: none;
+    color: #12ca7e;
+    font-size: 35px;
+    padding-right: 20px;
+}

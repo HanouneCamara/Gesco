@@ -1,0 +1,70 @@
+#active {
+    border-bottom: 1px solid #fff;
+}
+body{
+    height: auto;
+    background-color: #212422;
+    color: #fff;
+}
+header{
+    text-align: center;
+    
+}
+
+.tableau-style{
+    border-collapse: collapse;
+    min-width: 100px;
+    position: absolute;
+    width: max-content;
+    top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+thead th{
+    background-color: #212422;
+    color: #12ca7e;
+    text-align: center;
+}
+th, td{
+    padding: 15px 20px;
+}
+tbody, tr, td, th{
+    border: 1px solid #ddd;
+}
+td a{
+    text-decoration: none;
+   
+    color: #12ca7e;
+}
+td a:hover{
+    color: #12ca7e;
+}
+tbody tr td{
+    background-color: gray;
+    text-align: center;
+}
+img{
+    background-color: #ddd;
+}
+img:hover{
+    background-color: #12ca7e;
+}
+@media only screen and (max-width: 600px) {
+
+	.droite{
+		margin-left: 0px;
+	}
+	.droite select, input{
+		margin-left: 0px;
+	}
+    .container .login-social {
+        display: block;
+    }
+    .container .login-social a {
+        display: block;
+    }
+	.pied-formulaire button{
+		left: 50%;
+	}
+}

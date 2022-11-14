@@ -1,0 +1,158 @@
+body{
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3 {
+	text-align: start;
+    color: #12ca7e;
+	font-family: dayrom, serif;
+    font-weight: bolder;
+	font-size: 20px;
+    padding: 20px;
+}
+form{
+    padding: 30px 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    border: 2px solid #0b0f0c;
+    border-radius: 4px;
+    display: block;
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+}
+form select {
+    border: 2px solid #0b0f0c;
+    border-radius: 4px;
+    display: block;
+    margin: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+form button{
+    background-color: #12ca7e;
+    border: 1px solid #12ca7e;
+    border-radius: 4px;
+    color: black;
+    width: auto;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: lighter;
+    cursor: pointer;
+    text-align: center;
+}
+.form button:hover{
+    background-color: #0b0f0c;
+    color: #12ca7e;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+    width: max-content;
+	height: auto;
+}
+.table td {
+	color: black;
+}
+td a{
+    text-decoration: none;
+   
+    color: #12ca7e;
+}
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background-color: #12ca7e;
+	color: #000;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: black;
+}
+.success-msg{
+	margin:10px 0;
+	display: block;
+	background: #12ca7e;
+	color:#fff;
+	border-radius: 5px;
+	font-size: 20px;
+	padding:10px;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	header {
+		display: none;
+	}
+	.table {
+		transform: none;
+		top: 10%;
+		left: 0;
+		padding: 20px;
+	}
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	td a{
+		color: #000;
+	}
+	td a i {
+		color: #9e0c0c;
+	}
+	
+	.table tr{
+		margin-bottom:20px;
+		background-color: #12ca7e;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+		color: black;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+	.form {
+		display: none;
+	}
+}

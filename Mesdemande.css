@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 20px 40px;
+}
+header h1{
+    color: #12ca7e;
+    font-family: dayom, serif;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: -35px;
+}
+.tableau-style{
+    border-collapse: collapse;
+    min-width: 400px;
+    cursor: pointer;
+    margin: 30px auto;
+    border-radius: 10px;
+    border: 1px solid #12ca7e;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}   
+thead th{
+    background-color: #12ca7e;
+    color: #fff;
+    text-align: left;
+}
+th, td{
+    padding: 15px 20px;
+}
+tbody, tr, td, th{
+    border: 1px solid #ddd;
+}
+tbody:nth-child(2n+1){
+    background-color: #12ca7e;
+}
+
+#btnReturn{
+    text-decoration: none;
+    color: #12ca7e;
+    font-size: 35px;
+    padding-right: 20px;
+}
